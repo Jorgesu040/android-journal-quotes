@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Ethereal Journal Palette -->
+    <color name="primary">#44665c</color>
+    <color name="primary_dim">#385a50</color>
+    <color name="primary_container">#c5ebde</color>
+    <color name="surface">#f8faf9</color>
+    <color name="surface_container_low">#f1f4f3</color>
+    <color name="surface_container_lowest">#ffffff</color>
+    <color name="on_surface_variant">#596060</color>
+    <color name="secondary_container">#4c6272</color>
+    <color name="on_secondary_container">#ffffff</color>
+    <color name="surface_container_high">#e8eceb</color>
+    <color name="surface_container_highest">#e1e5e4</color>
+    <color name="error_container">#fa746f</color>
+    <color name="outline_variant">#26000000</color> <!-- 15% opacity ghost border -->
+</resources>

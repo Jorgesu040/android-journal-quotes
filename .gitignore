@@ -1,0 +1,15 @@
+.gradle/
+.kotlin/
+.idea/
+**/build/
+local.properties
+*.iml
+*.jks
+*.keystore
+*.zip
+.DS_Store
+.firebase/
+*-debug.log*
+emulator-data/
+app/google-services.json
+app/src/release/google-services.json

@@ -1,0 +1,32 @@
+{
+  "nombre": "Alex Demo",
+  "correo": "demo@example.test",
+  "journals": {
+    "demo-walk": {
+      "id": "demo-walk",
+      "title": "Un paseo al terminar el día",
+      "text": "Hoy he reservado un rato para pasear y ordenar ideas. Mañana continuaré con el proyecto del curso.",
+      "imgURL": "",
+      "mood": ":) - Tranquilo",
+      "timestamp": 1794574800000
+    },
+    "demo-learning": {
+      "id": "demo-learning",
+      "title": "Una pequeña mejora",
+      "text": "He dividido una tarea grande en tres pasos. Completar el primero me ha ayudado a ver cómo seguir.",
+      "imgURL": "",
+      "mood": ":) - Motivado",
+      "timestamp": 1794488400000
+    }
+  },
+  "bookmarks": {
+    "demo-learning": {
+      "id": "demo-learning",
+      "title": "Una pequeña mejora",
+      "text": "He dividido una tarea grande en tres pasos. Completar el primero me ha ayudado a ver cómo seguir.",
+      "imgURL": "",
+      "mood": ":) - Motivado",
+      "timestamp": 1794488400000
+    }
+  }
+}

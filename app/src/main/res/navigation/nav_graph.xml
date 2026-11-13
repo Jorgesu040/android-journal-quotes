@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/journalFragment">
+
+    <fragment
+        tools:layout="@layout/fragment_journal"
+        android:id="@+id/journalFragment"
+        android:name="com.example.practicaandroid.ui.fragments.JournalFragment"
+        android:label="Journal Screen" >
+        <action
+            android:id="@+id/action_journalFragment_to_journalItemFragment"
+            app:destination="@id/journalItemFragment" />
+        <argument
+            android:name="journalItem"
+            app:argType="com.example.practicaandroid.model.Journal" />
+    </fragment>
+
+    <fragment
+        tools:layout="@layout/fragment_write"
+        android:id="@+id/writeFragment"
+        android:name="com.example.practicaandroid.ui.fragments.WriteFragment"
+        android:label="Write Screen" />
+
+    <fragment
+        tools:layout="@layout/fragment_bookmark"
+        android:id="@+id/bookmarkFragment"
+        android:name="com.example.practicaandroid.ui.fragments.BookmarkFragment"
+        android:label="Bookmark Screen" >
+        <action
+            android:id="@+id/action_bookmarkFragment_to_journalItemFragment"
+            app:destination="@id/journalItemFragment" />
+    </fragment>
+
+    <fragment
+        tools:layout="@layout/fragment_quotes"
+        android:id="@+id/quotesFragment"
+        android:name="com.example.practicaandroid.ui.fragments.QuotesFragment"
+        android:label="Quotes Screen" />
+    <fragment
+        android:id="@+id/journalItemFragment"
+        android:name="com.example.practicaandroid.ui.fragments.JournalItemFragment"
+        android:label="Journal Detail"
+        tools:layout="@layout/fragment_journal_item" />
+
+</navigation>

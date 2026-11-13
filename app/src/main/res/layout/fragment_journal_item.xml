@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFEF"
+    android:clipToPadding="false"
+    tools:context=".ui.fragments.JournalItemFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="280dp">
+
+            <ImageView
+                android:id="@+id/ivHeaderImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                tools:src="@tools:sample/backgrounds/scenic" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnBack"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="top|start"
+                android:layout_margin="32dp"
+                android:gravity="center"
+                android:insetLeft="0dp"
+                android:insetTop="0dp"
+                android:insetRight="0dp"
+                android:insetBottom="0dp"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:padding="0dp"
+                app:backgroundTint="#F4F6F8"
+                app:cornerRadius="20dp"
+                app:icon="@android:drawable/ic_menu_revert"
+                app:iconGravity="textStart"
+                app:iconPadding="0dp"
+                app:iconSize="20dp"
+                app:iconTint="#3A8E4F"
+                app:strokeColor="#E2E8E4"
+                app:strokeWidth="1dp"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+
+        </FrameLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="-24dp"
+            android:layout_marginBottom="24dp"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardCornerRadius="24dp"
+            app:cardElevation="8dp"
+            app:strokeWidth="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <TextView
+                    android:id="@+id/tvDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="24 DE OCTUBRE, 2023"
+                    android:textColor="#888888"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Amanecer en la Costa"
+                    android:textColor="#0E4D48"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipMood"
+                    style="@style/Widget.MaterialComponents.Chip.Action"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Estado de ánimo: Calma"
+                    android:textColor="#0B5383"
+                    app:chipBackgroundColor="#D7EAFC"
+                    app:chipStrokeWidth="0dp" />
+
+                <TextView
+                    android:id="@+id/tvBody"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:lineSpacingExtra="6dp"
+                    android:text="Hoy desperté con una sensación de paz que no había sentido en semanas. El sonido de las olas rompiendo suavemente contra la orilla fue mi despertador natural. Me quedé unos minutos simplemente escuchando, sin prisa por empezar el día.\n\nA veces olvidamos lo necesario que es el silencio, o al menos el ruido que no es artificial. Mientras caminaba por la arena fría, sentí que mis pensamientos se ordenaban por sí solos. No había presión por resolver nada, solo la observación del momento.\n\nEl cielo tenía unos tonos rosados y naranjas que parecían sacados de una pintura. Me hizo pensar en la impermanencia de las cosas bellas y en cómo eso las hace aún más valiosas. Quiero llevar esta sensación de calma conmigo durante el resto..."
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</ScrollView>
+
